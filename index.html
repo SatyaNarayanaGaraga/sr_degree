@@ -318,26 +318,50 @@ footer p{font-size:.75rem;line-height:1.8}
   .mobile-apply{background:linear-gradient(135deg,#c8922a,#f0c060);color:#09192e}
   .mobile-call{background:#25D366;color:#fff}
 
-
   nav{padding:.8rem 1rem}
   .nav-ul{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(9,25,46,.98);padding:1.5rem;gap:1rem}
   .nav-ul.open{display:flex}
   .nav-apply{display:none}
   .ham{display:flex}
-  .hero-inner{grid-template-columns:1fr;gap:2rem}
+
+  /* HERO */
+  .hero-inner{grid-template-columns:1fr;gap:1.8rem}
   .hero-right{display:none}
+  h1{font-size:2rem;line-height:1.15}
+  .hero-cred{flex-direction:column;gap:.5rem}
+  .hero-cred span{font-size:.75rem}
+
+  /* BANNERS */
+  .seat-banner{flex-direction:column;align-items:flex-start;gap:.9rem;padding:.9rem 1rem}
+  .seat-item{width:100%;justify-content:space-between}
+
+  /* GRIDS */
   .adm-inner{grid-template-columns:1fr}
   .contact-inner{grid-template-columns:1fr}
   .proof-bars{grid-template-columns:1fr}
-  section,#numbers,#admission{padding:3.5rem 1.2rem}
-  .campus-grid{grid-template-columns:1fr 1fr}
+  .campus-grid{grid-template-columns:1fr}
   .courses-grid{grid-template-columns:1fr}
   .stats-row{grid-template-columns:1fr 1fr}
   .testi-grid{grid-template-columns:1fr}
+
+  /* TRUST STRIP */
+  .trust-strip div{grid-template-columns:1fr}
+
+  /* COUNTDOWN */
+  .countdown{gap:.4rem}
+  .cd-num{font-size:1.6rem;min-width:44px}
+
+  /* TICKERS */
+  .ticker-item{font-size:.75rem}
+  .lf-item{font-size:.72rem}
+
+  /* BUTTON GROUP */
   .hero-btns{display:none}
-  .hire-card{min-width:140px;font-size:.85rem;padding:.8rem 1rem}
-  .cg-item:first-child{grid-column:1/-1}
-  .seat-banner{gap:1rem}
+
+  /* FIX OVERLAP WITH MOBILE CTA */
+  .scarcity-toast{bottom:6.5rem}
+
+  .cg-item:first-child{grid-column:auto}
 }
 .hire-card{min-width:180px;background:white;color:#09192e;font-weight:700;border-radius:10px;padding:1rem 1.4rem;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);font-size:.95rem}
 .hire-card:hover{transform:translateY(-4px)}
@@ -347,7 +371,19 @@ footer p{font-size:.75rem;line-height:1.8}
 .trust-value{font-size:1rem;font-weight:800;color:#09192e;margin-top:.2rem}
 .trust-sub{font-size:.72rem;color:#6b7280;margin-top:.2rem}
 
-@keyframes hireScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* smooth infinite scroll for hiring companies */
+.hire-track{display:flex;gap:2rem;width:max-content;animation:hireScroll 30s linear infinite;will-change:transform}
+
+/* continuous marquee scroll */
+@keyframes hireScroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+/* ensure cards stay in one line */
+#hiring{overflow:hidden}
+.hire-track{white-space:nowrap}
+.hire-card{flex:0 0 auto}
 </style>
 <meta name="description" content="SR Degree College, Tanuku — BSc Artificial Intelligence, BSc Computer Science, and BCom programs. Affiliated to Adikavi Nannaya University. Admissions Open 2025–26.">
 
@@ -665,8 +701,8 @@ footer p{font-size:.75rem;line-height:1.8}
   </div>
 
   <!-- scrolling logos -->
-  <div style="margin-top:3rem;overflow:hidden">
-    <div class="hire-track" style="display:flex;gap:2rem;width:max-content;animation:hireScroll 22s linear infinite;padding:1rem 0">
+  <div style="margin-top:3rem;overflow:hidden;width:100%">
+    <div class="hire-track">
       <div class="hire-card">TCS</div>
       <div class="hire-card">Infosys</div>
       <div class="hire-card">Wipro</div>
@@ -675,6 +711,8 @@ footer p{font-size:.75rem;line-height:1.8}
       <div class="hire-card">HCL</div>
       <div class="hire-card">Tech Mahindra</div>
       <div class="hire-card">ICICI Bank</div>
+
+      <!-- duplicate for infinite smooth scroll -->
       <div class="hire-card">TCS</div>
       <div class="hire-card">Infosys</div>
       <div class="hire-card">Wipro</div>
