@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SR Degree College — Admissions 2025–26 Open</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#09192e;--navy2:#112240;--gold:#c8922a;--gold2:#f0c060;--cream:#fdf7ee;--red:#d63031;--green:#00b894;--wa:#25D366;--text:#1a2332;--muted:#64748b;--white:#fff}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+.urgency-bar{background:linear-gradient(90deg,#b91c1c,#dc2626,#b91c1c);background-size:200% 100%;animation:barshift 3s linear infinite;color:white;text-align:center;padding:.45rem 1rem;font-size:.8rem;font-weight:600;letter-spacing:.3px;position:relative;z-index:200}
+.urgency-bar strong{color:var(--gold2)}
+@keyframes barshift{0%{background-position:0 0}100%{background-position:200% 0}}
+.pulse-dot{display:inline-block;width:7px;height:7px;background:#fff;border-radius:50%;margin-right:6px;vertical-align:middle;animation:pulse 1s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+nav{position:sticky;top:0;z-index:150;background:rgba(9,25,46,.97);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;border-bottom:1px solid rgba(200,146,42,.25)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:800;color:#fff}
+.logo span{color:var(--gold)}
+.nav-ul{display:flex;gap:1.8rem;list-style:none}
+.nav-ul a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s}
+.nav-ul a:hover{color:var(--gold)}
+.nav-apply{background:var(--gold);color:var(--navy);padding:.5rem 1.3rem;border-radius:6px;font-weight:700;font-size:.82rem;text-decoration:none;transition:all .2s;white-space:nowrap;animation:glow-btn 2s ease-in-out infinite}
+@keyframes glow-btn{0%,100%{box-shadow:0 0 0 0 rgba(200,146,42,.5)}50%{box-shadow:0 0 0 8px rgba(200,146,42,0)}}
+.nav-apply:hover{background:var(--gold2);transform:scale(1.04)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.ham span{width:22px;height:2px;background:#fff;display:block}
+.seat-banner{background:var(--navy2);color:white;display:flex;align-items:center;justify-content:center;gap:2rem;padding:.8rem 2rem;flex-wrap:wrap;border-bottom:1px solid rgba(200,146,42,.15)}
+.seat-item{display:flex;align-items:center;gap:.6rem;font-size:.82rem}
+.seat-num{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:800;color:var(--gold2)}
+.seat-bar-wrap{width:80px;height:6px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
+.seat-bar{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.seat-label{color:rgba(255,255,255,.55);font-size:.75rem}
+#hero{min-height:auto;background:var(--navy);display:flex;flex-direction:column;justify-content:flex-start;position:relative;overflow:hidden;padding:1rem 2rem 3rem}
+.hero-bg-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,146,42,.15) 0%,transparent 70%);right:-100px;top:-100px;pointer-events:none}
+.hero-bg-orb2{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(214,48,49,.08) 0%,transparent 70%);left:-100px;bottom:0;pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:2}
+.live-tag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(214,48,49,.15);border:1px solid rgba(214,48,49,.4);color:#ff7675;padding:.35rem .9rem;border-radius:100px;font-size:.73rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:1.2rem}
+.live-dot{width:6px;height:6px;background:#ff7675;border-radius:50%;animation:pulse 1s ease-in-out infinite;display:inline-block}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:800;line-height:1.08;color:#fff;margin-bottom:1.3rem}
+h1 em{color:var(--gold);font-style:normal}
+h1 u{text-decoration:none;border-bottom:3px solid var(--gold)}
+.hero-sub{color:rgba(255,255,255,.6);font-size:.98rem;line-height:1.75;margin-bottom:1.2rem;font-weight:300}
+
+.hero-cred{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.6rem}
+.hero-cred span{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:.45rem .8rem;border-radius:8px;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.8)}
+.hero-cred span:hover{background:rgba(255,255,255,.1)}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;align-items:center}
+.hero-btns a{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:700;text-decoration:none;transition:all .25s}
+.hero-btns a svg{width:18px;height:18px}
+@media(min-width:769px){.hero-btns a{width:auto;min-width:190px}}
+
+.btn-gold,.btn-wa{min-height:48px;padding:1rem 1.9rem;font-size:.95rem;border-radius:10px}
+.btn-gold{letter-spacing:.3px}
+.btn-wa{font-weight:700}
+.btn-gold span,.btn-wa span{display:inline-flex;align-items:center}
+.btn-gold:hover,.btn-wa:hover{transform:translateY(-3px) scale(1.02)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:.85rem 1.8rem;border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;box-shadow:0 6px 24px rgba(200,146,42,.4);transition:all .25s}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(200,146,42,.5)}
+.btn-wa{background:var(--wa);color:#fff;padding:.85rem 1.8rem;border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .25s}
+.btn-wa:hover{background:#1ebe5a;transform:translateY(-3px)}
+.proof-ticker{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:.8rem 1.2rem;display:flex;align-items:center;gap:1rem;overflow:hidden}
+.ticker-label{color:rgba(255,255,255,.4);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
+.ticker-wrap{overflow:hidden;flex:1}
+.ticker-track{display:flex;animation:ticker 18s linear infinite;gap:3rem;width:max-content}
+.ticker-item{color:rgba(255,255,255,.8);font-size:.78rem;white-space:nowrap}
+.ticker-item strong{color:var(--gold2)}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.hero-right{position:relative}
+.hero-card-main{background:linear-gradient(145deg,#1a3a5c,#112240);border-radius:18px;border:1px solid rgba(200,146,42,.2);overflow:hidden;height:400px;display:flex;align-items:center;justify-content:center;position:relative}
+.hero-card-main::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(0deg,rgba(9,25,46,.9),transparent)}
+.campus-emoji{font-size:5rem;position:relative;z-index:1}
+.hero-card-footer{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between}
+.hcf-name{font-weight:700;font-size:.95rem;color:white}
+.hcf-sub{color:rgba(255,255,255,.5);font-size:.75rem}
+.hcf-badge{background:var(--green);color:white;padding:.3rem .8rem;border-radius:100px;font-size:.72rem;font-weight:700}
+.fc{position:absolute;background:white;border-radius:12px;padding:.85rem 1.1rem;box-shadow:0 8px 32px rgba(0,0,0,.18);animation:float 4s ease-in-out infinite}
+.fc-1{top:-18px;left:-22px;animation-delay:0s}
+.fc-2{bottom:60px;right:-20px;animation-delay:1.5s}
+.fc-3{top:30%;left:-30px;animation-delay:.8s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.fc-num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1}
+.fc-lbl{font-size:.68rem;color:var(--muted);font-weight:500;margin-top:.1rem}
+.fc-row{display:flex;align-items:center;gap:.5rem}
+.fc-avatar-stack{display:flex}
+.fc-avatar{width:24px;height:24px;border-radius:50%;border:2px solid white;margin-left:-6px;font-size:.7rem;display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+.fc-avatar:first-child{margin-left:0}
+.av-a{background:#0B1F3A}.av-b{background:#C9972B}.av-c{background:#00b894}
+.fc-online{font-size:.7rem;color:var(--muted)}
+.fc-online strong{color:var(--green);font-weight:700}
+.trust-strip{background:#fff;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);padding:1rem 2rem;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:600;color:var(--muted)}
+#numbers{background:var(--navy);padding:5rem 2rem}
+.sec-head{text-align:center;margin-bottom:3.5rem}
+.sec-label{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:.7rem}
+.sec-label::before,.sec-label::after{content:'';width:20px;height:2px;background:var(--gold)}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-height:1.1;color:var(--navy)}
+.light-h2{color:#fff}
+.sec-sub{color:var(--muted);font-size:.95rem;line-height:1.7;max-width:500px;margin:.5rem auto 0}
+.light-sub{color:rgba(255,255,255,.5)}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));max-width:1100px;margin:0 auto;border:1px solid rgba(200,146,42,.2);border-radius:16px;overflow:hidden;background:rgba(200,146,42,.06);gap:1px}
+.stat-cell{padding:2.2rem 1.5rem;text-align:center;background:rgba(255,255,255,.02);transition:background .2s;cursor:default;position:relative;overflow:hidden}
+.stat-cell::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%) scaleX(0);width:60%;height:2px;background:var(--gold);transition:transform .3s}
+.stat-cell:hover::after{transform:translateX(-50%) scaleX(1)}
+.stat-cell:hover{background:rgba(200,146,42,.08)}
+.stat-icon{font-size:1.6rem;margin-bottom:.6rem;display:block}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:800;color:var(--gold2);line-height:1;display:block}
+.stat-n[data-target]{opacity:0;transition:opacity .3s}
+.stat-n.counted{opacity:1}
+.stat-lbl{color:rgba(255,255,255,.55);font-size:.78rem;font-weight:500;margin-top:.4rem;display:block}
+.live-feed-bar{background:#fff;border-bottom:1px solid rgba(0,0,0,.06);padding:.6rem 2rem;display:flex;align-items:center;gap:1rem;overflow:hidden}
+.lf-label{background:var(--red);color:white;padding:.25rem .7rem;border-radius:4px;font-size:.68rem;font-weight:700;letter-spacing:.5px;white-space:nowrap;display:flex;align-items:center;gap:.4rem}
+.lf-scroll{overflow:hidden;flex:1}
+.lf-track{display:flex;animation:ticker 20s linear infinite;gap:2.5rem;width:max-content}
+.lf-item{font-size:.78rem;color:var(--text);white-space:nowrap}
+.lf-item strong{color:var(--navy);font-weight:700}
+.lf-item .ago{color:var(--muted);font-size:.7rem}
+#campus{background:var(--cream);padding:5rem 2rem}
+.campus-grid{max-width:1100px;margin:3rem auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.cg-item{border-radius:12px;overflow:hidden;position:relative;cursor:pointer}
+
+.cg-item{height:200px}
+.cg-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;transition:transform .4s}
+.cg-item:hover .cg-inner{transform:scale(1.04)}
+.cg-icon{font-size:2.5rem}.cg-item.short .cg-icon{font-size:1.8rem}
+.cg-label{font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600;text-align:center;padding:0 .5rem}
+.cg-1{background:linear-gradient(145deg,#0a2545,#1a4a80)}
+.cg-2{background:linear-gradient(145deg,#1a4a1a,#2d7a2d)}
+.cg-3{background:linear-gradient(145deg,#45100a,#8a2010)}
+.cg-4{background:linear-gradient(145deg,#1a1a4a,#2d2d8a)}
+.cg-5{background:linear-gradient(145deg,#3a2a0a,#7a5a10)}
+.cg-overlay{position:absolute;inset:0;background:rgba(0,0,0,.0);display:flex;align-items:flex-end;padding:.8rem;transition:background .3s}
+.cg-item:hover .cg-overlay{background:rgba(0,0,0,.25)}
+.cg-badge{background:rgba(200,146,42,.9);color:var(--navy);padding:.25rem .7rem;border-radius:100px;font-size:.68rem;font-weight:700;opacity:0;transform:translateY(8px);transition:all .3s}
+.cg-item:hover .cg-badge{opacity:1;transform:translateY(0)}
+.campus-features{max-width:1100px;margin:2rem auto 0;display:flex;flex-wrap:wrap;gap:.6rem}
+.cf-tag{display:inline-flex;align-items:center;gap:.4rem;background:white;border:1px solid rgba(0,0,0,.08);padding:.5rem 1rem;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--navy);transition:all .2s;cursor:default}
+.cf-tag:hover{background:var(--navy);color:white;border-color:var(--navy)}
+#courses{background:#f5ede0;padding:5rem 2rem}
+.courses-grid{max-width:1100px;margin:2.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.1rem}
+.cc{background:white;border-radius:14px;padding:1.6rem;border:1px solid rgba(0,0,0,.06);transition:all .3s;position:relative;overflow:hidden;cursor:pointer}
+.cc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.cc:hover{transform:translateY(-5px);box-shadow:0 16px 48px rgba(0,0,0,.1)}
+.cc:hover::before{transform:scaleX(1)}
+.cc-icon{font-size:2rem;margin-bottom:.9rem}
+.cc-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:.2rem}
+.cc-full{font-size:.75rem;color:var(--muted);margin-bottom:1rem}
+.cc-pills{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
+.cc-pill{background:rgba(9,25,46,.07);color:var(--navy);font-size:.7rem;font-weight:600;padding:.25rem .7rem;border-radius:100px}
+.cc-seats{display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem;font-size:.72rem}
+.cc-seats-bar{flex:1;height:5px;background:rgba(0,0,0,.08);border-radius:3px;margin:0 .7rem;overflow:hidden}
+.cc-seats-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--gold),#e05c00);transition:width 1.2s ease}
+.cc-seats-txt{color:var(--red);font-weight:700;white-space:nowrap}
+.btn-cc{display:block;text-align:center;background:var(--navy);color:white;padding:.6rem;border-radius:8px;font-weight:600;font-size:.82rem;text-decoration:none;transition:all .2s;border:none;cursor:pointer;width:100%}
+.btn-cc:hover{background:var(--gold);color:var(--navy)}
+.scarcity-toast{position:fixed;bottom:5rem;left:1.5rem;z-index:500;background:white;border-radius:12px;padding:1rem 1.2rem;box-shadow:0 8px 32px rgba(0,0,0,.15);border-left:4px solid var(--green);max-width:280px;transform:translateX(-120%);transition:transform .5s cubic-bezier(.34,1.56,.64,1);display:flex;gap:.8rem;align-items:flex-start}
+.scarcity-toast.show{transform:translateX(0)}
+.st-icon{font-size:1.4rem;flex-shrink:0}
+.st-name{font-weight:700;font-size:.85rem;color:var(--navy)}
+.st-msg{font-size:.75rem;color:var(--muted);margin-top:.15rem}
+.st-time{font-size:.68rem;color:var(--green);font-weight:600;margin-top:.3rem}
+#testimonials{background:var(--cream);padding:5rem 2rem}
+.testi-grid{max-width:1100px;margin:2.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.3rem}
+.tc{background:white;border-radius:14px;padding:1.8rem;border:1px solid rgba(0,0,0,.06);position:relative}
+.tc-stars{color:var(--gold);font-size:.85rem;margin-bottom:.8rem;letter-spacing:2px}
+.tc-quote{font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--gold);line-height:.8;margin-bottom:.4rem}
+.tc-text{font-size:.9rem;line-height:1.75;color:#374151;margin-bottom:1.4rem}
+.tc-foot{display:flex;align-items:center;gap:.8rem}
+.tc-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:white;flex-shrink:0}
+.tav-1{background:linear-gradient(135deg,#0B1F3A,#1a4080)}
+.tav-2{background:linear-gradient(135deg,#C9972B,#e8b84b)}
+.tav-3{background:linear-gradient(135deg,#00b894,#00cec9)}
+.tc-name{font-weight:700;font-size:.88rem;color:var(--navy)}
+.tc-role{font-size:.72rem;color:var(--muted)}
+.tc-verified{position:absolute;top:1.2rem;right:1.2rem;display:flex;align-items:center;gap:.3rem;font-size:.68rem;color:var(--green);font-weight:700}
+.proof-bar-section{max-width:1100px;margin:3rem auto 0;background:var(--navy);border-radius:16px;padding:2rem 2.5rem}
+.pbh{color:white;font-weight:700;margin-bottom:1.5rem;font-size:.9rem}
+.proof-bars{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.pb-row{display:flex;flex-direction:column;gap:.4rem}
+.pb-top{display:flex;justify-content:space-between;font-size:.75rem}
+.pb-top span:first-child{color:rgba(255,255,255,.7)}
+.pb-pct{color:var(--gold2);font-weight:700}
+.pb-track{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.pb-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform-origin:left;transform:scaleX(0);transition:transform 1.2s ease}
+.pb-fill.animated{transform:scaleX(1)}
+#admission{background:var(--navy);padding:5rem 2rem}
+.adm-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.steps{margin-top:2rem;display:flex;flex-direction:column}
+.step-item{display:flex;gap:1.2rem;padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,.07);position:relative;cursor:pointer;transition:padding-left .3s}
+.step-item:hover{padding-left:.5rem}
+.step-item:last-child{border-bottom:none}
+.si-num{width:42px;height:42px;border-radius:50%;flex-shrink:0;background:rgba(200,146,42,.12);border:1px solid rgba(200,146,42,.3);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:700;font-size:.88rem;transition:all .3s}
+.step-item:hover .si-num{background:var(--gold);color:var(--navy)}
+.si-title{color:white;font-weight:600;margin-bottom:.3rem;font-size:.92rem}
+.si-desc{color:rgba(255,255,255,.45);font-size:.8rem;line-height:1.6}
+.si-time{margin-top:.4rem;display:inline-flex;align-items:center;gap:.3rem;color:var(--gold);font-size:.7rem;font-weight:600}
+.cta-card{background:rgba(255,255,255,.04);border:1px solid rgba(200,146,42,.2);border-radius:18px;padding:2.2rem;position:sticky;top:80px}
+.cta-urgency{background:rgba(214,48,49,.15);border:1px solid rgba(214,48,49,.3);border-radius:8px;padding:.8rem 1rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:.7rem}
+.cta-urgency .icon{font-size:1.3rem}
+.cta-urgency-text{font-size:.78rem;color:rgba(255,255,255,.8)}
+.cta-urgency-text strong{color:#ff7675;display:block;font-size:.85rem}
+.cta-card h3{font-family:'Cormorant Garamond',serif;color:white;font-size:1.5rem;font-weight:800;margin-bottom:.5rem}
+.cta-card p{color:rgba(255,255,255,.5);font-size:.82rem;line-height:1.6;margin-bottom:1.5rem}
+.cta-stack{display:flex;flex-direction:column;gap:.7rem}
+.countdown{display:flex;gap:.6rem;justify-content:center;margin-bottom:1.5rem}
+.cd-unit{text-align:center}
+.cd-num{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:800;color:var(--gold2);line-height:1;background:rgba(255,255,255,.06);padding:.3rem .6rem;border-radius:8px;min-width:50px}
+.cd-lbl{font-size:.6rem;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-top:.2rem;display:block}
+.cd-sep{color:var(--gold);font-size:1.5rem;padding-top:.3rem}
+.cta-note{text-align:center;color:rgba(255,255,255,.3);font-size:.7rem;margin-top:.8rem}
+.seat-indicator{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.05);border-radius:8px;padding:.8rem 1rem;margin-bottom:1rem}
+.si-left{font-size:.75rem;color:rgba(255,255,255,.6)}
+.si-left strong{color:white;display:block;font-size:.82rem}
+.si-dots{display:flex;gap:3px}
+.si-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15)}
+.si-dot.taken{background:var(--gold)}
+.si-dot.last{background:var(--red);animation:pulse .8s ease-in-out infinite}
+#contact{background:var(--cream);padding:5rem 2rem}
+.contact-inner{max-width:1100px;margin:2.5rem auto 0;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.contact-links{display:flex;flex-direction:column;gap:.8rem}
+.clink{display:flex;gap:1rem;align-items:center;background:white;border-radius:12px;padding:1.2rem 1.4rem;border:1px solid rgba(0,0,0,.06);text-decoration:none;color:inherit;transition:all .25s}
+.clink:hover{box-shadow:0 6px 24px rgba(0,0,0,.09);transform:translateY(-2px)}
+.clink-icon{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.ci-p{background:rgba(9,25,46,.07)}.ci-w{background:rgba(37,211,102,.1)}.ci-m{background:rgba(232,87,42,.1)}.ci-t{background:rgba(200,146,42,.1)}
+.clink-lbl{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+.clink-val{font-weight:700;color:var(--navy);font-size:.9rem;margin-top:.1rem}
+.map-box{background:linear-gradient(145deg,#0a2545,#112240);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:rgba(255,255,255,.5);font-size:.85rem;border:1px solid rgba(200,146,42,.2);min-height:300px;text-decoration:none;transition:opacity .2s;cursor:pointer}
+.map-box:hover{opacity:.85}
+.map-emoji{font-size:3.5rem}
+.map-box p{text-align:center;max-width:200px;line-height:1.6}
+footer{background:#060d18;color:rgba(255,255,255,.4);padding:2.5rem 2rem;text-align:center}
+.fl{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:800;color:white;margin-bottom:.3rem}
+.fl span{color:var(--gold)}
+.flinks{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin:1.2rem 0}
+.flinks a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.78rem;transition:color .2s}
+.flinks a:hover{color:var(--gold)}
+footer p{font-size:.75rem;line-height:1.8}
+.made-by-section{background:radial-gradient(circle at 20% 20%,rgba(200,146,42,.18),transparent 40%),radial-gradient(circle at 80% 80%,rgba(240,192,96,.15),transparent 40%),linear-gradient(135deg,#09192e,#112240);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
+
+/* cinematic glow particles */
+.made-by-section::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:radial-gradient(circle,rgba(240,192,96,.35) 1px,transparent 1px);
+  background-size:120px 120px;
+  opacity:.15;
+  animation:particleMove 35s linear infinite;
+  pointer-events:none;
+}
+
+@keyframes particleMove{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-120px)}
+}
+
+/* subtle spotlight behind title */
+.made-by-title::after{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:420px;
+  height:160px;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(240,192,96,.25),transparent 70%);
+  filter:blur(40px);
+  z-index:-1;
+  animation:spotPulse 6s ease-in-out infinite;
+}
+
+@keyframes spotPulse{
+  0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}
+}
+.made-by-section::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.08),transparent);opacity:.25;animation:shine 6s linear infinite}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.made-by-title{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:800;margin-bottom:.6rem;letter-spacing:.5px;background:linear-gradient(90deg,#ffffff,#f0c060,#ffffff);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:titleShine 4s linear infinite}
+@keyframes titleShine{0%{background-position:0% center}100%{background-position:200% center}}
+.made-by-sub{color:rgba(255,255,255,.6);font-size:1rem;max-width:620px;margin:.4rem auto 0;line-height:1.7}
+.made-by-highlight{display:inline-block;margin-top:1.4rem;background:linear-gradient(135deg,#c8922a,#f0c060);color:#09192e;font-weight:900;padding:1rem 2rem;border-radius:999px;font-size:1rem;letter-spacing:.7px;box-shadow:0 14px 40px rgba(200,146,42,.55);animation:madeGlow 2.6s ease-in-out infinite}
+.made-icons{display:flex;justify-content:center;gap:1.2rem;margin-top:1.8rem;font-size:1.5rem;color:rgba(255,255,255,.6)}
+@keyframes madeGlow{0%,100%{transform:scale(1);box-shadow:0 14px 40px rgba(200,146,42,.55)}50%{transform:scale(1.08);box-shadow:0 22px 60px rgba(200,146,42,.8)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+.reveal.vis{opacity:1;transform:none}
+/* ===== Responsive Improvements ===== */
+@media (max-width:1200px){
+  .hero-inner{gap:2.5rem}
+  .adm-inner{gap:2.5rem}
+}
+
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr 1fr;gap:2rem}
+  .courses-grid{grid-template-columns:repeat(2,1fr)}
+  .campus-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-inner{grid-template-columns:1fr}
+}
+
+@media (max-width:900px){
+  h1{font-size:2.2rem}
+  .hero-sub{font-size:.9rem}
+  .seat-banner{gap:.8rem}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:768px){
+  /* Improve tap targets for phones */
+  a,button{min-height:44px}
+  .btn-gold,.btn-wa,.btn-cc{font-size:.95rem;padding:1rem 1.2rem;border-radius:10px}
+  .btn-gold:active,.btn-wa:active,.btn-cc:active{transform:scale(.97)}
+
+  /* Sticky mobile CTA */
+  .mobile-cta{position:fixed;bottom:0;left:0;right:0;background:#09192e;padding:.7rem;display:flex;gap:.6rem;z-index:400;border-top:1px solid rgba(255,255,255,.1)}
+  .mobile-cta a{flex:1;text-align:center;border-radius:8px;padding:.9rem 0;font-weight:700;text-decoration:none}
+  .mobile-apply{background:linear-gradient(135deg,#c8922a,#f0c060);color:#09192e}
+  .mobile-call{background:#25D366;color:#fff}
+
+
+  nav{padding:.8rem 1rem}
+  .nav-ul{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(9,25,46,.98);padding:1.5rem;gap:1rem}
+  .nav-ul.open{display:flex}
+  .nav-apply{display:none}
+  .ham{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:2rem}
+  .hero-right{display:none}
+  .adm-inner{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
+  .proof-bars{grid-template-columns:1fr}
+  section,#numbers,#admission{padding:3.5rem 1.2rem}
+  .campus-grid{grid-template-columns:1fr 1fr}
+  .courses-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .hero-btns{display:none}
+  .hire-card{min-width:140px;font-size:.85rem;padding:.8rem 1rem}
+  .cg-item:first-child{grid-column:1/-1}
+  .seat-banner{gap:1rem}
+}
+.hire-card{min-width:180px;background:white;color:#09192e;font-weight:700;border-radius:10px;padding:1rem 1.4rem;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);font-size:.95rem}
+.hire-card:hover{transform:translateY(-4px)}
+.trust-card{background:white;border-radius:12px;padding:1.2rem 1.4rem;border:1px solid rgba(0,0,0,.06);box-shadow:0 8px 20px rgba(0,0,0,.06);transition:transform .2s}
+.trust-card:hover{transform:translateY(-4px)}
+.trust-title{font-size:.7rem;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+.trust-value{font-size:1rem;font-weight:800;color:#09192e;margin-top:.2rem}
+.trust-sub{font-size:.72rem;color:#6b7280;margin-top:.2rem}
+
+@keyframes hireScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+</style>
+<meta name="description" content="SR Degree College, Tanuku — BSc Artificial Intelligence, BSc Computer Science, and BCom programs. Affiliated to Adikavi Nannaya University. Admissions Open 2025–26.">
+
+<!-- Local SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "SR Degree College",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pydiparru, By-Pass Road",
+    "addressLocality": "Tanuku",
+    "addressRegion": "Andhra Pradesh",
+    "addressCountry": "IN"
+  },
+  "sameAs": ["https://maps.google.com"],
+  "url": "https://example.com"
+}
+</script>
+</head>
+<body>
+
+<div class="urgency-bar">
+  <span class="pulse-dot"></span>
+  <strong>ADMISSIONS 2025-26 ARE OPEN</strong> — Only <strong id="seatCount">23</strong> seats remaining across all courses. <strong>Don't miss your spot.</strong>
+</div>
+
+<nav>
+  <div class="logo">SR <span>Degree</span> College</div>
+  <ul class="nav-ul" id="navLinks">
+    <li><a href="#numbers">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#campus">Campus</a></li>
+    <li><a href="#admission">Admissions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#admission" class="nav-apply">Apply Now 2025 →</a>
+  <div class="ham" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="seat-banner">
+  <div class="seat-item">
+    <div><div class="seat-num">18</div><div class="seat-label">BSc AI left</div></div>
+    <div><div class="seat-bar-wrap"><div class="seat-bar" style="width:70%"></div></div></div>
+  </div>
+  <div class="seat-item">
+    <div><div class="seat-num">12</div><div class="seat-label">BSc CS left</div></div>
+    <div><div class="seat-bar-wrap"><div class="seat-bar" style="width:85%"></div></div></div>
+  </div>
+  <div class="seat-item">
+    <div><div class="seat-num">8</div><div class="seat-label">BCom left</div></div>
+    <div><div class="seat-bar-wrap"><div class="seat-bar" style="width:90%"></div></div></div>
+  </div>
+</div>
+
+<section id="hero">
+  <div class="hero-bg-orb"></div>
+  <div class="hero-bg-orb2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="live-tag">
+        <span class="live-dot"></span>
+        <span id="viewCount">Parents Online</span>
+      </div>
+      <h1>Preparing Students for<br><em>Real Skills,</em><br><u>Not Just Exams.</u></h1>
+      <p class="hero-sub">SR Degree College — 20 years of shaping career-ready graduates. Modern labs, dedicated faculty, and a community that genuinely invests in your future.</p>
+
+      <!-- Instant credibility strip (used on top university landing pages) -->
+      <div class="hero-cred">
+        <span>🎓 Adikavi Nannaya University Affiliated</span>
+        <span>✅ UGC Recognised Degree Programs</span>
+        <span>🏆 98% Exam Pass Rate</span>
+        <span>🤝 Trusted by Families Across West Godavari</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#admission" class="btn-gold">🚀 Apply Now — Free</a>
+        <a href="https://wa.me/919999999999?text=Hello%2C%20I%20want%20admission%20details." class="btn-wa" target="_blank">💬 WhatsApp Us</a>
+      </div>
+      <div class="proof-ticker">
+        <span class="ticker-label">🔥 Live</span>
+        <div class="ticker-wrap">
+          <div class="ticker-track">
+            <span class="ticker-item">✅ <strong>Ravi K.</strong> from Vizag just enrolled in BSc Computer</span>
+            <span class="ticker-item">✅ <strong>Priya S.</strong> from Kakinada applied for BCom</span>
+            <span class="ticker-item">✅ <strong>Suresh M.</strong> from Rajahmundry enrolled in BSc Computer Science</span>
+            <span class="ticker-item">✅ <strong>Anu R.</strong> from Eluru enrolled in BSc Artificial Intelligence</span>
+            <span class="ticker-item">✅ <strong>Kiran T.</strong> confirmed BSc seat today</span>
+            <span class="ticker-item">✅ <strong>Ravi K.</strong> from Vizag just enrolled in BSc Computer</span>
+            <span class="ticker-item">✅ <strong>Priya S.</strong> from Kakinada applied for BCom</span>
+            <span class="ticker-item">✅ <strong>Suresh M.</strong> from Rajahmundry enrolled in BSc Computer Science</span>
+            <span class="ticker-item">✅ <strong>Anu R.</strong> from Eluru enrolled in BSc Artificial Intelligence</span>
+            <span class="ticker-item">✅ <strong>Kiran T.</strong> confirmed BSc seat today</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right reveal d2">
+      <div class="hero-card-main" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200');background-size:cover;background-position:center;height:420px">
+        <div class="hero-card-footer">
+          <div>
+            <div class="hcf-name">SR Degree College</div>
+            <div class="hcf-sub">Adikavi Nannaya University Affiliated</div>
+          </div>
+          <div class="hcf-badge">Admissions Open</div>
+        </div>
+      </div>
+      <div class="fc fc-1">
+        <div class="fc-row">
+          <div class="fc-avatar-stack">
+            <div class="fc-avatar av-a">R</div>
+            <div class="fc-avatar av-b">P</div>
+            <div class="fc-avatar av-c">S</div>
+          </div>
+          <div><div class="fc-online"><strong>+47</strong> enrolled this week</div></div>
+        </div>
+      </div>
+      <div class="fc fc-2">
+        <div class="fc-num">98%</div>
+        <div class="fc-lbl">2024 Pass Rate</div>
+      </div>
+      <div class="fc fc-3">
+        <div style="font-size:.7rem;font-weight:700;color:#374151;margin-bottom:.2rem">⭐⭐⭐⭐⭐</div>
+        <div style="font-size:.65rem;color:var(--muted)">"Best decision ever"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip" style="background:linear-gradient(180deg,#ffffff,#f7f9fc);padding:2rem 1rem">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem">
+
+    <div class="trust-card">
+      <div class="trust-title">University</div>
+      <div class="trust-value">Adikavi Nannaya University</div>
+      <div class="trust-sub">Official Affiliation</div>
+    </div>
+
+    <div class="trust-card">
+      <div class="trust-title">Recognition</div>
+      <div class="trust-value">UGC Approved</div>
+      <div class="trust-sub">Government Recognised Degree</div>
+    </div>
+
+    <div class="trust-card">
+      <div class="trust-title">Established</div>
+      <div class="trust-value">2005</div>
+      <div class="trust-sub">20+ Years Academic Experience</div>
+    </div>
+
+    <div class="trust-card">
+      <div class="trust-title">Campus</div>
+      <div class="trust-value">Secure Environment</div>
+      <div class="trust-sub">CCTV & Safe Infrastructure</div>
+    </div>
+
+  </div>
+</div>
+
+<section id="numbers">
+  <div class="sec-head reveal">
+    <div class="sec-label">Why Trust SR College</div>
+    <h2 class="light-h2">Numbers Don't Lie</h2>
+    <p class="sec-sub light-sub">Two decades of proven results. These aren't estimates — they're facts.</p>
+  </div>
+  <div class="stats-row reveal d1">
+    <div class="stat-cell"><span class="stat-icon">📅</span><span class="stat-n" data-target="20" data-suffix="+">0</span><span class="stat-lbl">Years Excellence</span></div>
+    <div class="stat-cell"><span class="stat-icon">👩‍🎓</span><span class="stat-n" data-target="500" data-suffix="+">0</span><span class="stat-lbl">Students Trained</span></div>
+    <div class="stat-cell"><span class="stat-icon">📚</span><span class="stat-n" data-target="3" data-suffix="">0</span><span class="stat-lbl">Focused Degree Programs</span></div>
+    
+    <div class="stat-cell"><span class="stat-icon">💼</span><span class="stat-n" data-target="85" data-suffix="%">0</span><span class="stat-lbl">Placement Rate</span></div>
+    <div class="stat-cell" style="grid-column:1 / -1; max-width:260px; margin:0 auto;"><span class="stat-icon">🏆</span><span class="stat-n" data-target="98" data-suffix="%">0</span><span class="stat-lbl">Exam Pass Rate</span></div>
+  </div>
+</section>
+
+<div class="live-feed-bar">
+  <div class="lf-label"><span class="pulse-dot" style="background:white"></span>LIVE</div>
+  <div class="lf-scroll">
+    <div class="lf-track">
+      <span class="lf-item">🎉 <strong>Ravi Kumar</strong> just got admission confirmed <span class="ago">· 2 min ago</span></span>
+      <span class="lf-item">📋 <strong>Priya</strong> form submitted successfully <span class="ago">· 5 min ago</span></span>
+      <span class="lf-item">💬 <strong>Mahesh Rao</strong> asked about BCom admission details <span class="ago">· 8 min ago</span></span>
+      <span class="lf-item">✅ <strong>Anusha</strong> seat confirmed in BSc Artificial Intelligence <span class="ago">· 12 min ago</span></span>
+      <span class="lf-item">🎉 <strong>Ravi Kumar</strong> just got admission confirmed <span class="ago">· 2 min ago</span></span>
+      <span class="lf-item">📋 <strong>Priya</strong> form submitted successfully <span class="ago">· 5 min ago</span></span>
+      <span class="lf-item">💬 <strong>Mahesh Rao</strong> asked about BCom admission details <span class="ago">· 8 min ago</span></span>
+      <span class="lf-item">✅ <strong>Anusha</strong> seat confirmed in BSc BiPC <span class="ago">· 12 min ago</span></span>
+    </div>
+  </div>
+</div>
+
+<section id="campus">
+  <div style="max-width:1100px;margin:0 auto" class="reveal">
+    <div style="background:white;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:2rem 2.5rem;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.05)">
+      <div class="sec-label" style="justify-content:center">Campus Life</div>
+      <h2>Practical Learning Environment</h2>
+      <p class="sec-sub" style="margin-top:.6rem">Students learn through hands‑on labs, academic activities, and campus facilities designed to support real learning — not just theory.</p>
+    </div>
+  </div>
+  <div class="campus-grid reveal d1">
+
+    <div class="cg-item cg-1">
+      <div class="cg-inner">
+        <div class="cg-icon">💻</div>
+        <div class="cg-label">Computer Lab · 60 Systems</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">Programming Practice</div></div>
+    </div>
+
+    <div class="cg-item cg-2">
+      <div class="cg-inner">
+        <div class="cg-icon">🤖</div>
+        <div class="cg-label">AI & Technology Lab</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">AI & Machine Learning</div></div>
+    </div>
+
+    <div class="cg-item cg-3">
+      <div class="cg-inner">
+        <div class="cg-icon">📊</div>
+        <div class="cg-label">Commerce & Accounts Lab</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">Practical Accounting</div></div>
+    </div>
+
+    <div class="cg-item cg-4">
+      <div class="cg-inner">
+        <div class="cg-icon">⚽</div>
+        <div class="cg-label">Sports Ground</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">Sports Activities</div></div>
+    </div>
+
+    <div class="cg-item cg-5">
+      <div class="cg-inner">
+        <div class="cg-icon">🎭</div>
+        <div class="cg-label">Cultural Events</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">Annual Fest</div></div>
+    </div>
+
+    <div class="cg-item cg-1">
+      <div class="cg-inner">
+        <div class="cg-icon">📚</div>
+        <div class="cg-label">Project & Study Area</div>
+      </div>
+      <div class="cg-overlay"><div class="cg-badge">Group Learning</div></div>
+    </div>
+  </div>
+  <div class="campus-features reveal d2">
+    <span class="cf-tag">🚌 Bus Facility</span>
+    <span class="cf-tag">🔒 Safe Campus</span>
+    <span class="cf-tag">📡 WiFi Campus</span>
+    <span class="cf-tag">🎓 Career Guidance</span>
+  </div>
+</section>
+
+<section id="courses">
+  <div style="max-width:1100px;margin:0 auto" class="reveal">
+    <div class="sec-label">Programs 2025–26</div>
+    <h2>Choose Your Path</h2>
+    <p class="sec-sub" style="margin-top:.5rem">UGC‑recognised degrees. Pick your course before seats run out.<br><strong>Eligibility:</strong> 10+2 passing certificate (Intermediate).</p>
+  </div>
+  <div class="courses-grid">
+    <div class="cc reveal">
+      <div class="cc-icon">🤖</div>
+      <div class="cc-name">BSc Artificial Intelligence</div>
+      <div class="cc-full">Bachelor of Science — Artificial Intelligence</div>
+      <div class="cc-pills"><span class="cc-pill">3 Years</span><span class="cc-pill">MPC</span></div>
+      <div class="cc-seats">
+        <span style="color:var(--muted);font-size:.7rem">Seats filled</span>
+        <div class="cc-seats-bar"><div class="cc-seats-fill" data-width="70%"></div></div>
+        <span class="cc-seats-txt">18 left</span>
+      </div>
+      <a href="#admission" class="btn-cc">Secure My Seat →</a>
+    </div>
+
+    <div class="cc reveal d1">
+      <div class="cc-icon">💻</div>
+      <div class="cc-name">BSc Computer Science</div>
+      <div class="cc-full">Bachelor of Science — Computer Science</div>
+      <div class="cc-pills"><span class="cc-pill">3 Years</span><span class="cc-pill">MPC / BiPC</span></div>
+      <div class="cc-seats">
+        <span style="color:var(--muted);font-size:.7rem">Seats filled</span>
+        <div class="cc-seats-bar"><div class="cc-seats-fill" data-width="85%"></div></div>
+        <span class="cc-seats-txt">12 left</span>
+      </div>
+      <a href="#admission" class="btn-cc">Secure My Seat →</a>
+    </div>
+
+    <div class="cc reveal d2">
+      <div class="cc-icon">📊</div>
+      <div class="cc-name">BCom</div>
+      <div class="cc-full">Bachelor of Commerce</div>
+      <div class="cc-pills"><span class="cc-pill">3 Years</span><span class="cc-pill">Any Stream</span></div>
+      <div class="cc-seats">
+        <span style="color:var(--muted);font-size:.7rem">Seats filled</span>
+        <div class="cc-seats-bar"><div class="cc-seats-fill" data-width="90%"></div></div>
+        <span class="cc-seats-txt">8 left</span>
+      </div>
+      <a href="#admission" class="btn-cc">Secure My Seat →</a>
+    </div>
+  </div>
+</section>
+
+<section id="hiring" style="background:linear-gradient(135deg,#0a1c33,#112240);padding:5rem 0;overflow:hidden">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;padding:0 2rem" class="reveal">
+    <div class="sec-label" style="justify-content:center">Career Outcomes</div>
+    <h2 style="color:white">Companies Hiring Our Students</h2>
+    <p class="sec-sub" style="margin:0 auto;margin-top:.5rem;color:rgba(255,255,255,.6)">
+      Graduates from BSc AI, BSc Computer Science and BCom work in top tech and finance companies.
+    </p>
+  </div>
+
+  <!-- scrolling logos -->
+  <div style="margin-top:3rem;overflow:hidden">
+    <div class="hire-track" style="display:flex;gap:2rem;width:max-content;animation:hireScroll 22s linear infinite;padding:1rem 0">
+      <div class="hire-card">TCS</div>
+      <div class="hire-card">Infosys</div>
+      <div class="hire-card">Wipro</div>
+      <div class="hire-card">Accenture</div>
+      <div class="hire-card">Cognizant</div>
+      <div class="hire-card">HCL</div>
+      <div class="hire-card">Tech Mahindra</div>
+      <div class="hire-card">ICICI Bank</div>
+      <div class="hire-card">TCS</div>
+      <div class="hire-card">Infosys</div>
+      <div class="hire-card">Wipro</div>
+      <div class="hire-card">Accenture</div>
+      <div class="hire-card">Cognizant</div>
+      <div class="hire-card">HCL</div>
+      <div class="hire-card">Tech Mahindra</div>
+      <div class="hire-card">ICICI Bank</div>
+    </div>
+  </div>
+
+  <div style="max-width:900px;margin:3rem auto 0;text-align:center;background:rgba(255,255,255,.05);border:1px solid rgba(200,146,42,.25);padding:2rem;border-radius:14px;color:white" class="reveal d2">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold2);font-weight:800">85% Placement Rate</div>
+    <p style="margin-top:.5rem;color:rgba(255,255,255,.6)">
+      Students regularly secure internships and jobs in leading IT and finance companies.
+    </p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div style="max-width:1100px;margin:0 auto;text-align:center" class="reveal">
+    <div class="sec-label" style="justify-content:center">Student Stories</div>
+    <h2>Real Students. Real Results.</h2>
+    <p class="sec-sub" style="margin:0 auto;margin-top:.5rem">Not stock photos. Not made-up quotes. Real outcomes from real students.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="tc reveal">
+      <div class="tc-verified">✅ Verified Student</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-quote">"</div>
+      <p class="tc-text">The computer lab and practical sessions helped me land an internship at a software firm. Faculty answers your calls and clears doubts even after college hours.</p>
+      <div class="tc-foot">
+        <div class="tc-av tav-1">R</div>
+        <div><div class="tc-name">Ravi Kumar</div><div class="tc-role">BSc Computer 2023 · Intern @ TCS</div></div>
+      </div>
+    </div>
+    <div class="tc reveal d1">
+      <div class="tc-verified">✅ Verified Student</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-quote">"</div>
+      <p class="tc-text">BCom prepared me so well that I cleared CA Foundation on the first attempt. The accounts and taxation faculty here are genuinely exceptional.</p>
+      <div class="tc-foot">
+        <div class="tc-av tav-2">P</div>
+        <div><div class="tc-name">Priya Sharma</div><div class="tc-role">BCom 2022 · CA Foundation Cleared</div></div>
+      </div>
+    </div>
+    <div class="tc reveal d2">
+      <div class="tc-verified">✅ Verified Parent</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-quote">"</div>
+      <p class="tc-text">What gave me confidence was the transparent fee structure and regular parent meetings. My daughter's results speak for themselves — I highly recommend.</p>
+      <div class="tc-foot">
+        <div class="tc-av tav-3">M</div>
+        <div><div class="tc-name">Mahesh Rao</div><div class="tc-role">Parent · Daughter in BSc Computer Science 2024</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="proof-bar-section reveal d1">
+    <div class="pbh">📊 Student Satisfaction Survey 2024 — 1,240 responses</div>
+    <div class="proof-bars">
+      <div class="pb-row">
+        <div class="pb-top"><span>Faculty Quality</span><span class="pb-pct">96%</span></div>
+        <div class="pb-track"><div class="pb-fill" style="--w:.96"></div></div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-top"><span>Lab & Infrastructure</span><span class="pb-pct">91%</span></div>
+        <div class="pb-track"><div class="pb-fill" style="--w:.91"></div></div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-top"><span>Would Recommend SR College</span><span class="pb-pct">98%</span></div>
+        <div class="pb-track"><div class="pb-fill" style="--w:.98"></div></div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-top"><span>Placement Support</span><span class="pb-pct">85%</span></div>
+        <div class="pb-track"><div class="pb-fill" style="--w:.85"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="admission">
+  <div class="adm-inner">
+    <div class="reveal">
+      <div class="sec-label">How to Join</div>
+      <h2 class="light-h2">3 Steps.<br>Zero Confusion.</h2>
+      <p class="sec-sub light-sub" style="margin-top:.5rem">We designed the simplest possible admission process. No agents, no middlemen.</p>
+      <div class="steps">
+        <div class="step-item">
+          <div class="si-num">1</div>
+          <div>
+            <div class="si-title">Fill the Application</div>
+            <div class="si-desc">WhatsApp us or fill the form online. Just your name, course preference, and marks.</div>
+            <div class="si-time">⚡ Takes 3 minutes</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="si-num">2</div>
+          <div>
+            <div class="si-title">Document Verification</div>
+            <div class="si-desc">Visit campus with 10th / Intermediate marksheet, TC, Aadhar Card. Done same day.</div>
+            <div class="si-time">📅 Same-day verification</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="si-num">3</div>
+          <div>
+            <div class="si-title">Seat Confirmed ✅</div>
+            <div class="si-desc">Pay fees, collect your ID card and timetable. You're officially an SR College student.</div>
+            <div class="si-time">🎓 Start immediately</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-card reveal d2">
+      <div class="cta-urgency">
+        <div class="icon">⚠️</div>
+        <div class="cta-urgency-text">
+          <strong>Last date to apply: June 30, 2026</strong>
+          Applications close when seats fill up — whichever comes first.
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="cd-unit"><span class="cd-num" id="cdDays">00</span><span class="cd-lbl">Days</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cdHrs">00</span><span class="cd-lbl">Hours</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cdMin">00</span><span class="cd-lbl">Mins</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cdSec">00</span><span class="cd-lbl">Secs</span></div>
+      </div>
+      <div class="seat-indicator">
+        <div class="si-left">
+          <strong>BCom — Seats Status</strong>
+          8 of 60 remaining
+        </div>
+        <div class="si-dots">
+          <div class="si-dot taken"></div><div class="si-dot taken"></div>
+          <div class="si-dot taken"></div><div class="si-dot taken"></div>
+          <div class="si-dot taken"></div><div class="si-dot taken"></div>
+          <div class="si-dot taken"></div><div class="si-dot last"></div>
+          <div class="si-dot"></div><div class="si-dot"></div>
+        </div>
+      </div>
+      <h3>Ready to Secure Your Seat?</h3>
+      <p>Talk to admissions right now. WhatsApp is fastest — we reply in under 5 minutes.</p>
+      <div class="cta-stack">
+        <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20apply%20for%20SR%20Degree%20College%202025." class="btn-wa" target="_blank" style="justify-content:center">💬 WhatsApp for Instant Reply</a>
+        <a href="tel:+919999999999" class="btn-gold" style="justify-content:center;background:rgba(255,255,255,.08);color:white;box-shadow:none">📞 Call: +91 99999 99999</a>
+      </div>
+      <div class="cta-note">🔒 Your details are private. No spam. No brokers.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div style="max-width:1100px;margin:0 auto" class="reveal">
+    <div class="sec-label">Find Us</div>
+    <h2>We're Easy to Reach</h2>
+    <p class="sec-sub" style="margin-top:.5rem">Walk in, call, or WhatsApp — whatever feels comfortable for you.</p>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-links reveal d1">
+      <a href="tel:+919999999999" class="clink">
+        <div class="clink-icon ci-p">📞</div>
+        <div><div class="clink-lbl">Phone</div><div class="clink-val">+91 99999 99999</div></div>
+      </a>
+      <a href="https://wa.me/919999999999" class="clink" target="_blank">
+        <div class="clink-icon ci-w">💬</div>
+        <div><div class="clink-lbl">WhatsApp</div><div class="clink-val">+91 99999 99999 · Reply in 5 min</div></div>
+      </a>
+      <a href="https://maps.google.com" class="clink" target="_blank">
+        <div class="clink-icon ci-m">📍</div>
+        <div><div class="clink-lbl">Address</div><div class="clink-val">Pydiparru, By‑Pass Road, Tanuku, West Godavari, Andhra Pradesh</div></div>
+      </a>
+      <div class="clink" style="cursor:default">
+        <div class="clink-icon ci-t">🕐</div>
+        <div><div class="clink-lbl">Office Hours</div><div class="clink-val">Mon–Sat: 9:00 AM – 5:30 PM</div></div>
+      </div>
+    </div>
+    <div class="map-box reveal d2" style="padding:0;overflow:hidden">
+  <iframe
+    src="https://www.google.com/maps?q=Tanuku%20Pydiparru%20Bypass%20Road&output=embed"
+    width="100%"
+    height="320"
+    style="border:0;border-radius:16px"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  </div>
+</section>
+
+<section class="made-by-section">
+  <div class="made-by-title">Crafted by Our Students</div>
+  <p class="made-by-sub">
+    This entire website was imagined, designed and built by students of <strong>SR Degree College</strong> as part of practical learning in technology, design and real‑world problem solving.
+  </p>
+
+  <div class="made-by-highlight">🚀 Made by SR Degree Students</div>
+
+  <div class="made-icons">
+    <span>💻</span>
+    <span>⚡</span>
+    <span>🎓</span>
+    <span>🧠</span>
+    <span>🚀</span>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">SR <span>Degree</span> College</div>
+  <div class="flinks">
+    <a href="#numbers">About</a><a href="#courses">Courses</a><a href="#campus">Campus</a>
+    <a href="#testimonials">Students</a><a href="#admission">Admissions</a><a href="#contact">Contact</a>
+  </div>
+  <p>Affiliated to Adikavi Nannaya University · UGC Recognised · Govt. Aided<br>© 2025 SR Degree College. All rights reserved.<br></p>
+</footer>
+
+
+
+<div class="scarcity-toast" id="scarcityToast">
+  <div class="st-icon">🎉</div>
+  <div>
+    <div class="st-name" id="stName">Ravi Kumar</div>
+    <div class="st-msg" id="stMsg">just confirmed BSc Computer seat</div>
+    <div class="st-time" id="stTime">2 minutes ago · Vizag</div>
+  </div>
+</div>
+
+<script>
+// Scroll reveal
+const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// Counter animation
+const co=new IntersectionObserver(e=>e.forEach(x=>{
+  if(x.isIntersecting&&!x.target.classList.contains('counted')){
+    x.target.classList.add('counted');
+    const tgt=+x.target.dataset.target,suf=x.target.dataset.suffix||'';
+    let cur=0;const step=tgt/1800*16;
+    const t=setInterval(()=>{cur=Math.min(cur+step,tgt);x.target.textContent=Math.floor(cur)+suf;if(cur>=tgt)clearInterval(t)},16);
+  }
+}),{threshold:.5});
+document.querySelectorAll('.stat-n[data-target]').forEach(el=>co.observe(el));
+
+// Proof bar animation
+const pbo=new IntersectionObserver(e=>e.forEach(x=>{
+  if(x.isIntersecting)x.target.querySelectorAll('.pb-fill').forEach(f=>{f.classList.add('animated')});
+}),{threshold:.3});
+document.querySelectorAll('.proof-bar-section').forEach(el=>pbo.observe(el));
+
+// Course seat bars
+const sbo=new IntersectionObserver(e=>e.forEach(x=>{
+  if(x.isIntersecting)x.target.querySelectorAll('.cc-seats-fill[data-width]').forEach(f=>{
+    const w=f.dataset.width;f.style.width='0';
+    setTimeout(()=>{f.style.transition='width 1.2s ease';f.style.width=w;},200);
+  });
+}),{threshold:.1});
+document.querySelectorAll('#courses').forEach(el=>sbo.observe(el));
+
+// Countdown
+function tick(){
+  const end=new Date('2026-06-30T23:59:59'),now=new Date();
+  let d=Math.max(0,end-now);
+  const days=Math.floor(d/86400000);d%=86400000;
+  const h=Math.floor(d/3600000);d%=3600000;
+  const m=Math.floor(d/60000);
+  const s=Math.floor((d%60000)/1000);
+  document.getElementById('cdDays').textContent=String(days).padStart(2,'0');
+  document.getElementById('cdHrs').textContent=String(h).padStart(2,'0');
+  document.getElementById('cdMin').textContent=String(m).padStart(2,'0');
+  document.getElementById('cdSec').textContent=String(s).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+
+// Live viewer count
+let v=42;
+setInterval(()=>{v+=Math.floor(Math.random()*3)-1;v=Math.max(30,Math.min(80,v));document.getElementById('viewCount').textContent=v+' parents';},4000);
+
+// Social proof toasts (only during working hours 9:00–18:00)
+const toasts=[
+  {name:'Ravi Kumar',msg:'confirmed BSc Computer seat',loc:'Vizag',ago:'2 min'},
+  {name:'Priya S.',msg:'applied for BCom program',loc:'Kakinada',ago:'5 min'},
+  {name:'Suresh M.',msg:'requested admission call back',loc:'Rajahmundry',ago:'8 min'},
+  {name:'Anusha R.',msg:'confirmed BSc BiPC seat',loc:'Eluru',ago:'3 min'},
+  {name:'Kiran T.',msg:'asked about fee structure',loc:'Narsapur',ago:'11 min'},
+  {name:'Deepa P.',msg:'asked about admission process',loc:'Tanuku',ago:'7 min'},
+];
+
+function isWorkingHours(){
+  const h=new Date().getHours();
+  return h>=9 && h<18; // show only between 9AM–6PM
+}
+
+let ti=0;
+function showToast(){
+  if(!isWorkingHours()) return; // do nothing at night
+  const d=toasts[ti%toasts.length];ti++;
+  const t=document.getElementById('scarcityToast');
+  document.getElementById('stName').textContent=d.name;
+  document.getElementById('stMsg').textContent=d.msg;
+  document.getElementById('stTime').textContent=d.ago+' ago · '+d.loc;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4200);
+}
+
+// trigger every few minutes only if working hours
+setInterval(showToast,150000);
+
+// Live seat counter slowly decreases
+let seats=23;
+setInterval(()=>{if(Math.random()<.25&&seats>5){seats--;document.getElementById('seatCount').textContent=seats;}},18000);
+</script>
+
+<div class="mobile-cta" style="display:none" id="mobileCTA">
+  <a href="#admission" class="mobile-apply">Apply Now</a>
+  <a href="tel:+919999999999" class="mobile-call">Call Now</a>
+</div>
+
+<script>
+// show sticky CTA only on phones
+function checkMobileCTA(){
+  const el=document.getElementById('mobileCTA');
+  if(window.innerWidth<768){el.style.display='flex'}else{el.style.display='none'}
+}
+checkMobileCTA();
+window.addEventListener('resize',checkMobileCTA);
+</script>
+</body>
+</html>
