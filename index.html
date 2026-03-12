@@ -10,7 +10,8 @@
 :root{--navy:#09192e;--navy2:#112240;--gold:#c8922a;--gold2:#f0c060;--cream:#fdf7ee;--red:#d63031;--green:#00b894;--wa:#25D366;--text:#1a2332;--muted:#64748b;--white:#fff}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;max-width:100vw}
+img,iframe{max-width:100%;height:auto;display:block}
 .urgency-bar{background:linear-gradient(90deg,#b91c1c,#dc2626,#b91c1c);background-size:200% 100%;animation:barshift 3s linear infinite;color:white;text-align:center;padding:.45rem 1rem;font-size:.8rem;font-weight:600;letter-spacing:.3px;position:relative;z-index:200}
 .urgency-bar strong{color:var(--gold2)}
 @keyframes barshift{0%{background-position:0 0}100%{background-position:200% 0}}
@@ -307,6 +308,26 @@ footer p{font-size:.75rem;line-height:1.8}
 }
 
 @media(max-width:768px){
+
+  /* reduce large decorative background orbs that can push layout on small phones */
+  .hero-bg-orb{width:280px;height:280px;right:-120px;top:-120px}
+  .hero-bg-orb2{width:220px;height:220px;left:-120px;bottom:-40px}
+
+
+
+  /* prevent horizontal scrolling on phones */
+  body,html{overflow-x:hidden}
+  section,nav,footer,.urgency-bar{padding-left:1rem!important;padding-right:1rem!important}
+
+  /* fix bottom CTA fitting */
+  .mobile-cta{width:100%;left:0;right:0;gap:.5rem;padding:.6rem}
+  .mobile-cta a{font-size:.95rem;padding:.85rem 0}
+
+  /* prevent wide elements */
+  .hero-inner,.contact-inner,.adm-inner{width:100%}
+  .proof-ticker,.live-feed-bar{overflow:hidden}
+
+
   /* Improve tap targets for phones */
   a,button{min-height:44px}
   .btn-gold,.btn-wa,.btn-cc{font-size:.95rem;padding:1rem 1.2rem;border-radius:10px}
@@ -1043,3 +1064,4 @@ window.addEventListener('resize',checkMobileCTA);
 </script>
 </body>
 </html>
+
